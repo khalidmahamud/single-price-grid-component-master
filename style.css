@@ -20,6 +20,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Karla', sans-serif;
+    background-color: var(--light-gray);
 }
 
 .main-container {
@@ -27,6 +28,7 @@ body {
     height: 440px;
     border-radius: 6px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    margin: 0;
 }
 
 .top-part {
@@ -125,13 +127,16 @@ ul {
 
 @media (max-width: 600px) {
     body {
-        display: block;
+        background-color: var(--light-gray);
+        height: auto;
+        padding: 10px;
     }
 
     .main-container {
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: auto;
+        height: auto;
         box-shadow: none;
     }
 
