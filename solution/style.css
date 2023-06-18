@@ -1,0 +1,163 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+html {
+    box-sizing: border-box;
+    font: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.main-container {
+    width: 620px;
+    height: 440px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.top-part {
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    padding: 10px 35px 0px 35px;
+    border-radius: 6px 6px 0 0;
+}
+
+
+#primary-title {
+    color: var(--cyan);
+}
+
+#secondary-title {
+    color: var(--bright-yellow);
+}
+
+.text {
+    color: var(--grayish-blue);
+    font-size: 1rem;
+    line-height: .6rem;
+}
+
+.bottom-part {
+    width: 100%;
+    height: 55%;
+    font-size: 1rem;
+    color: var(--light-gray);
+    display: flex;
+}
+
+#left, #right {
+    width: 50%;
+    height: 100%;
+    padding: 10px 35px 30px 35px;
+}
+
+#left {
+    background-color: var(--cyan);  
+    border-radius: 0 0 0 6px;
+}
+
+#right {
+    background-color: rgba(42, 178, 175, 0.8);
+    border-radius: 0 0 6px 0;
+}
+
+.price {
+    margin: 0;
+    display: flex;
+}
+
+#amount {
+    height: 2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#per-month {
+    font-size: 1rem;
+    color: rgb(255, 255, 255, 0.5);
+    height: 100%;
+    font-weight: 400;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+
+#btn {
+    background-color: var(--bright-yellow);
+    color: var(--light-gray);
+    border: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.1rem;
+}
+
+#btn:hover {
+    background-color: rgba(192, 223, 52, 0.8);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    color: rgba(229, 239, 245, 0.6);
+    font-size: .9rem;
+    line-height: 1.2rem;
+}
+
+@media (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        box-shadow: none;
+    }
+
+    .top-part {
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 0;
+    }
+
+    .text {
+        line-height: normal;
+        margin: 10px 0;
+    }
+
+    .bottom-part {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+    #left, #right {
+        width: 100%;
+        height: 50%;
+        border-radius: 0;
+    }
+
+}
+
